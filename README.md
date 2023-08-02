@@ -1,0 +1,1 @@
+Proyecto que aspira ayudar a las personas a que resuelvan operaciones aritméticas cotidianas pero de forma automatizada. 
