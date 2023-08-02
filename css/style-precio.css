@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(73, 73, 73);
+
+}
+
+h1{
+    color:gold;
+    text-align: center;
+}
+
+.container-header{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    max-width: 500px;
+}
+
+.container-header > p{
+    color: whitesmoke;
+    text-align:justify;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    max-width: 600px;
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 1px white;
+    padding: 20px;
+    background-color: rgb(68, 68, 68);
+}
+
+.loguito{
+    position: absolute;
+    width: 50px;
+    bottom: 12px;
+    right: 12px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    row-gap: 15px;
+}
+
+.form > label{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.caja-texto{
+    height: 80px;
+    max-width: 180px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+    outline-color:gold;
+}
+
+.caja-texto::placeholder{
+    font-size: 1.2rem;
+}
+
+.caja-texto:focus{
+    box-shadow: 0px 0px 12px 1px gold;
+}
+
+.boton-calcular{
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 3em;
+    width: 180px;
+    border-radius: 5px;
+    outline-color: none;
+    margin-top: 1em;
+    margin-bottom:1em;
+    border:0 ;
+    background-color: #f07400;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.seccion-resultado{
+    display: none;
+}
+
+.caja-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.caja-resultado > p{    
+    color: gold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.span-resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000af;
+    height: 80px;
+    min-width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3cff00;
+}
+
+.boton-reset{
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 3em;
+    width: 180px;
+    border-radius: 5px;
+    outline-color: none;
+    margin-top: 1em;
+    margin-bottom:1em;
+    border:0 ;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+

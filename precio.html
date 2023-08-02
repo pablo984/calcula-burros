@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Calculadoras con soluciones aritméticas cotidianas">
+        <meta name="author" content="Pablo Araoz">
+        <!--FUENTES:-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
+        <link rel="stylesheet" href="./css/style-precio.css">
+        <title>Precio por kilo</title>
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <h1>Precio por kilo</h1>                
+            </div>
+        </header>
+
+        <main>
+            <div class="container-main">
+                <div class="form">
+                    <label for="idPeso">Ingresá el peso en gramos:</label> 
+                    <input type="number" name="peso" id="idPeso" class="caja-texto" placeholder="Gramos" required>
+
+                    <label for="idPrecio">Ingresá el precio por kilo:</label> 
+                    <input type="number" name="precio" id="idPrecio" class="caja-texto" placeholder="Precio $" required>
+
+                    <button class="boton-calcular">CALCULAR</button>
+
+                    <img src="./img/Logo padaar.png" alt="logo-padaar" class="loguito">
+                </div>
+                <section class="seccion-resultado">
+                    <div class="caja-resultado">                    
+                        <p>Precio a pagar:</p>
+                        <span class="span-resultado"></span>  
+                        <button class="boton-reset">RESET</button>                  
+                    </div>
+                </section>
+            </div>            
+        </main>
+        <script src="./js/precio.js"></script>
+    </body>
+</html>
