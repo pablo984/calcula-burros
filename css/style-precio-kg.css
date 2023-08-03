@@ -208,6 +208,7 @@ agregadas a las barras <span> mediante JavaScript: */
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .span-resultado{

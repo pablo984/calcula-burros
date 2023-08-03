@@ -27,3 +27,9 @@ El PROBLEMA estaba en que le había puesto un "display:grid" al "body". También
 con "display:flex" y el problema seguía. 
 No se en concreto cual es el problema, pero la SOLUCIÓN fue no poner el body flex ni
 grid, así que configuré cada sección del documento por separado.  
+
+PROBLEMA 4: 
+* Al querer sumar 2 variables que contienen valores del tipo número, sus valores no 
+se suman, sino que se concatenan.
+La SOLUCIÓN es colocar "parseFloat" o "ParseInt" para convertir el valor en número decimal
+o número entero. Ejemplo: parseFloat(variable1) + parseFloat(variable2).

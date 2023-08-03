@@ -8,14 +8,14 @@
         <!--FUENTES:-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
         <!--MI CSS:-->
-        <link rel="stylesheet" href="./css/style-precio-gr.css">
-        <title>Precio por gramos</title>
+        <link rel="stylesheet" href="./css/descuento-porc.css">
+        <title>Descuento de %</title>
     </head>
     <body>
         <div class="container-general">
             <header>
                 <div class="container-header">               
-                    <h2>Calcular precio según <span class="span-gramos">gramos</span></h2>                   
+                    <h2>Calcular descuento según <span class="span-porcentaje">%</span></h2>                   
                     <!--BOTON FIJO:-->            
                     <div class="menu__barras">
                         <span class="linea1__menu-barras"></span>
@@ -28,9 +28,9 @@
                     <div class="contenido-menu">                
                         <nav class="nav">
                             <a href="index.html">Home</a>
+                            <a href="precio-gr.html">Calcular en Gramos</a>
                             <a href="precio-kg.html">Calcular en kilos</a>
-                            <a href="aumento-porc.html">Calcular aumento %</a> 
-                            <a href="descuento-porc.html">Calcular descuento %</a>                       
+                            <a href="aumento-porc.html">Calcular aumento con %</a>                        
                         </nav>
                     </div>
                 </div>
@@ -39,11 +39,11 @@
             <main>
                 <div class="container-main">
                     <div class="form">
-                        <label for="idPeso">Ingresá el peso:</label> 
-                        <input type="number" name="peso" id="idPeso" class="caja-texto" placeholder="Gramos" required>
+                        <label for="idPrecioOriginal">Ingresá el precio original:</label> 
+                        <input type="number" name="peso" id="idPrecioOriginal" class="caja-texto" placeholder="Precio $" required>
     
-                        <label for="idPrecio">Ingresá el precio:</label> 
-                        <input type="number" name="precio" id="idPrecio" class="caja-texto" placeholder="$ Precio x kilo" required>
+                        <label for="idDescuento">Ingresá el % de descuento:</label> 
+                        <input type="number" name="precio" id="idDescuento" class="caja-texto" placeholder="Sólo números" required>
     
                         <button class="boton-calcular">CALCULAR</button>
     
@@ -51,7 +51,7 @@
                     </div>
                     <section class="seccion-resultado">
                         <div class="caja-resultado">                    
-                            <p>Precio a pagar:</p>
+                            <p>Precio a pagar con descuento:</p>
                             <span class="span-resultado"></span>  
                             <button class="boton-reset">RESET</button>                  
                         </div>
@@ -59,7 +59,7 @@
                 </div>            
             </main>
         </div>
-        <script src="./js/precio-gr.js"></script>
+        <script src="./js/descuento-porc.js"></script>
         <script src="./js/script-menu-barras.js"></script>
     </body>
 </html>
