@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Calculadoras con soluciones aritméticas cotidianas">
+        <meta name="author" content="Pablo Araoz">
+        <!--FUENTES:-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
+        <link rel="stylesheet" href="./css/style-precio-kg.css">
+        <title>Precio por kilo</title>
+    </head>
+    <body>
+        <div class="container-general">
+            <header>
+                <div class="container-header">               
+                    <h2>Calcular precio según <span class="span-kilos">kilos</span></h2>                   
+                    <!--BOTON FIJO:-->            
+                    <div class="menu__barras">
+                        <span class="linea1__menu-barras"></span>
+                        <span class="linea2__menu-barras"></span>
+                        <span class="linea3__menu-barras"></span>
+                    </div> 
+                </div>
+                <!--MENU CON LINKS:-->
+                <div class="container-menu">
+                    <div class="contenido-menu">                
+                        <nav class="nav">
+                            <a href="index.html">Home</a>
+                            <a href="precio-gr.html">Calcular en Gramos</a>
+                            <a href="#">Calcular porcentaje</a>                        
+                        </nav>
+                    </div>
+                </div>
+            </header>
+    
+            <main>
+                <div class="container-main">
+                    <div class="form">
+                        <label for="idPeso">Ingresá el peso:</label> 
+                        <input type="number" name="peso" id="idPeso" class="caja-texto" placeholder="Kilos" required>
+    
+                        <label for="idPrecio">Ingresá el precio:</label> 
+                        <input type="number" name="precio" id="idPrecio" class="caja-texto" placeholder="$ Precio x kilo" required>
+    
+                        <button class="boton-calcular">CALCULAR</button>
+    
+                        <img src="./img/Logo padaar.png" alt="logo-padaar" class="loguito">
+                    </div>
+                    <section class="seccion-resultado">
+                        <div class="caja-resultado">                    
+                            <p>Precio a pagar:</p>
+                            <span class="span-resultado"></span>  
+                            <button class="boton-reset">RESET</button>                  
+                        </div>
+                    </section>
+                </div>            
+            </main>
+        </div>
+        <script src="./js/precio-kg.js"></script>
+        <script src="./js/script-menu-barras.js"></script>
+    </body>
+</html>

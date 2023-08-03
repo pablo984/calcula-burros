@@ -1,7 +1,13 @@
-const botonPrecio = document.getElementById("boton-precio");
+const botonPrecio = document.getElementById("boton-precio-gr");
+const botonPrecioKg = document.getElementById("boton-precio-kg");
 
-botonPrecio.addEventListener("click", irAPrecio);
+botonPrecio.addEventListener("click", irAPrecioGr);
+botonPrecioKg.addEventListener("click", irAPrecioKg);
 
-function irAPrecio(){
-    window.location.href = "precio.html";
+function irAPrecioGr(){
+    window.location.href = "precio-gr.html";
+}
+
+function irAPrecioKg(){
+    window.location.href = "precio-kg.html";
 }

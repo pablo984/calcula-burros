@@ -8,18 +8,33 @@ const calculadora = document.querySelector(".container-main");
 const botonReset = document.querySelector(".boton-reset");
 
 //Variables que almacenan la info del usuario:
-let peso;
-let precio;
+let peso = "";
+let precio = "";
 let resultado;
 let signoPeso = "$ "
 
 /*Eventos al hacer click: */
-botonCalcular.addEventListener("click", calcular);
+botonCalcular.addEventListener("click", chequearSiHayDatos);
 botonReset.addEventListener("click", resetear);
 
 /*FUNCIONES:*/
-function calcular(){
+function chequearSiHayDatos(){
     cargarDatos();
+
+    if(peso == "") {
+        alert("Ingresá el valor del peso");
+        datoPeso.focus();
+    }
+    else if(precio == ""){
+        alert("Ingresá el valor del precio por kilo");
+        datoPrecio.focus();
+    }
+    else{
+        calcular();
+    }
+}
+
+function calcular(){
     realizarCalculos();
     mostrarResultado();
 }
@@ -30,7 +45,7 @@ function cargarDatos(){
 }
 
 function realizarCalculos(){
-    resultado = ((peso * precio) / 1000).toFixed(2);
+    resultado = (((peso * precio) / 1000)* 1000).toFixed(2);
 }
 
 function mostrarResultado(){
@@ -42,10 +57,3 @@ function mostrarResultado(){
 function resetear(){
     location.reload()
 }
-
-
-
-
-
-
-
