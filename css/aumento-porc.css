@@ -104,7 +104,7 @@ agregadas a las barras <span> mediante JavaScript: */
     gap: 2em;
     padding-left: 2.3em;
     padding-top: 1em;
-    transform: translateY(50%); /*Altura de los links con respecto al header*/
+    transform: translateY(30%); /*Altura de los links con respecto al header*/
 }
 
 .nav > a{

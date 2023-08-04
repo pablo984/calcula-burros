@@ -1,6 +1,6 @@
 //Variables que almacenan la selección del usuario:
 const datoPrecioOriginal = document.getElementById("idPrecioOriginal");
-const datoPorcentajeDeAumento = document.getElementById("idAumento");
+const datoPrecioConDescuento = document.getElementById("idDescuento");
 const botonCalcular = document.querySelector(".boton-calcular");
 const seccionResultado = document.querySelector(".seccion-resultado");
 const spanResultado = document.querySelector(".span-resultado");
@@ -9,9 +9,9 @@ const botonReset = document.querySelector(".boton-reset");
 
 //Variables que almacenan la info del usuario:
 let precioOriginal = "";
-let porcentajeDeAumento = "";
+let precioConDescuento = "";
 let resultado;
-let signoPeso = "$ "
+let signoPorciento = " %"
 
 /*Eventos al hacer click: */
 botonCalcular.addEventListener("click", chequearSiHayDatos);
@@ -25,9 +25,9 @@ function chequearSiHayDatos(){
         alert("Ingresá el valor del precio original");
         datoPrecioOriginal.focus();
     }
-    else if(porcentajeDeAumento == ""){
-        alert("Ingresá el valor del % de aumento");
-        datoPorcentajeDeAumento.focus();
+    else if(precioConDescuento == ""){
+        alert("Ingresá el valor del precio con descuento");
+        datoPrecioConDescuento.focus();
     }
     else{
         calcular();
@@ -36,7 +36,7 @@ function chequearSiHayDatos(){
 
 function cargarDatos(){
     precioOriginal = datoPrecioOriginal.value;
-    porcentajeDeAumento = datoPorcentajeDeAumento.value;        
+    precioConDescuento = datoPrecioConDescuento.value;        
 }
 
 function calcular(){
@@ -45,12 +45,12 @@ function calcular(){
 }
 
 function realizarCalculos(){
-    let resultadoParcial = (precioOriginal * porcentajeDeAumento) / 100;
-    resultado = (parseFloat(precioOriginal) + parseFloat(resultadoParcial)).toFixed(2);
+    let descuento = (precioOriginal - precioConDescuento);
+    resultado = ((descuento / precioOriginal) * 100).toFixed(1);
 }
 
 function mostrarResultado(){
-    spanResultado.innerHTML = signoPeso + resultado;
+    spanResultado.innerHTML = resultado + signoPorciento;
     calculadora.style.height="640px";
     seccionResultado.style.display="block"; 
 }

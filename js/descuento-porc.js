@@ -22,11 +22,11 @@ function chequearSiHayDatos(){
     cargarDatos();
 
     if(precioOriginal == "") {
-        alert("Ingresá el valor del peso");
+        alert("Ingresá el valor del precio original");
         datoPrecioOriginal.focus();
     }
     else if(porcentajeDeDescuento == ""){
-        alert("Ingresá el valor del precio por kilo");
+        alert("Ingresá el valor del % de descuento");
         datoPorcentajeDeDescuento.focus();
     }
     else{

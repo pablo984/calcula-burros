@@ -25,12 +25,15 @@ h2{
     color:gold;
     text-align: end;
     font-size: 1.1rem;  
-    padding-right: 20px;
+    margin-bottom: 0;
     padding-top: 4px;  
 }
 
-.span-porcentaje{
+.segundo-h2{
     color:#3cff00;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 /*---MENU HAMBURGUESA---*/
@@ -151,6 +154,7 @@ agregadas a las barras <span> mediante JavaScript: */
     flex-direction: column;    
     align-items: center;
     row-gap: 15px;
+    text-align: center;
 }
 
 .form > label{

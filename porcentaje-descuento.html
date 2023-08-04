@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadoras con soluciones aritméticas cotidianas">
+    <meta name="author" content="Pablo Araoz">
+    <!--FUENTES:-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
+    <!--MI CSS:-->
+    <link rel="stylesheet" href="./css/porcentaje-descuento.css">
+    <title>Porcentaje de descuento</title>
+</head>
+<body>
+    <div class="container-general">
+        <header>
+            <div class="container-header">               
+                <h2>Calcular % de descuento según</h2>   
+                <h2 class="segundo-h2">precio</h2>                
+                <!--BOTON FIJO:-->            
+                <div class="menu__barras">
+                    <span class="linea1__menu-barras"></span>
+                    <span class="linea2__menu-barras"></span>
+                    <span class="linea3__menu-barras"></span>
+                </div> 
+            </div>
+            <!--MENU CON LINKS:-->
+            <div class="container-menu">
+                <div class="contenido-menu">                
+                    <nav class="nav">
+                        <a href="index.html">Home</a>
+                        <a href="precio-gr.html">Calcular en gramos</a>
+                        <a href="precio-kg.html">Calcular en kilos</a>
+                        <a href="aumento-porc.html">Calcular aumento %</a>
+                        <a href="descuento-porc.html">Calcular descuento %</a>  
+                        <a href="porcentaje-aumento.html">% de aumento</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container-main">
+                <div class="form">
+                    <label for="idPrecioOriginal">Ingresá el precio original:</label> 
+                    <input type="number" name="peso" id="idPrecioOriginal" class="caja-texto" placeholder="Precio $" required>
+
+                    <label for="idDescuento">Ingresá el precio con descuento:</label> 
+                    <input type="number" name="precio" id="idDescuento" class="caja-texto" placeholder="Precio -- $" required>
+
+                    <button class="boton-calcular">CALCULAR</button>
+
+                    <img src="./img/Logo padaar.png" alt="logo-padaar" class="loguito">
+                </div>
+                <section class="seccion-resultado">
+                    <div class="caja-resultado">                    
+                        <p>El descuento es del:</p>
+                        <span class="span-resultado"></span>  
+                        <button class="boton-reset">RESET</button>                  
+                    </div>
+                </section>
+            </div>            
+        </main>
+    </div>
+    <script src="./js/porcentaje-descuento.js"></script>
+    <script src="./js/script-menu-barras.js"></script>
+</body>
+</html>

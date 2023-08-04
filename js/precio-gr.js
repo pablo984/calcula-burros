@@ -22,7 +22,7 @@ function chequearSiHayDatos(){
     cargarDatos();
 
     if(peso == "") {
-        alert("Ingresá el valor del peso");
+        alert("Ingresá el valor del peso en gramos");
         datoPeso.focus();
     }
     else if(precio == ""){

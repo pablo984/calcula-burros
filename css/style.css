@@ -39,10 +39,11 @@ body{
     flex-direction: column;
     align-items: center;    
     border-top: 1px solid whitesmoke;
+    /* width: 400px; */
 }
 
 .container-main > h2{
-    text-align: start;
+    text-align: center;
     color: whitesmoke;
     margin-bottom: 1em;
     width: 280px;
@@ -84,7 +85,7 @@ body{
     padding-left: 1.6em;
     padding-top: 0.8em;
     padding-bottom: 2em;
-    margin-top: 10em;
+    margin-top: 1em;
 }
 
 .link-formulario{

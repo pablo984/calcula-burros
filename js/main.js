@@ -2,11 +2,16 @@ const botonPrecio = document.getElementById("boton-precio-gr");
 const botonPrecioKg = document.getElementById("boton-precio-kg");
 const botonAumentoPorcentaje = document.getElementById("boton-aumento-porcentaje");
 const botonDescuentoPorcentaje = document.getElementById("boton-descuento-porcentaje");
+const botonPorcentajeAumento = document.getElementById("boton-porcentaje-aumento");
+const botonPorcentajeDescuento = document.getElementById("boton-porcentaje-descuento");
+
 
 botonPrecio.addEventListener("click", irAPrecioGr);
 botonPrecioKg.addEventListener("click", irAPrecioKg);
-botonAumentoPorcentaje.addEventListener("click", irAPorcentajeAumeto);
+botonAumentoPorcentaje.addEventListener("click", irAPorcentajeAumento);
 botonDescuentoPorcentaje.addEventListener("click", irAPorcentajeDescuento);
+botonPorcentajeAumento.addEventListener("click", irAAumentoPorcentaje);
+botonPorcentajeDescuento.addEventListener("click", irADescuentoPorcentaje);
 
 
 //FUNCIONES:
@@ -18,10 +23,18 @@ function irAPrecioKg(){
     window.location.href = "precio-kg.html";
 }
 
-function irAPorcentajeAumeto(){
+function irAPorcentajeAumento(){
     window.location.href = "aumento-porc.html";
 }
 
 function irAPorcentajeDescuento(){
     window.location.href = "descuento-porc.html";
+}
+
+function irAAumentoPorcentaje(){
+    window.location.href = "porcentaje-aumento.html";
+}
+
+function irADescuentoPorcentaje(){
+    window.location.href = "porcentaje-descuento.html";
 }
