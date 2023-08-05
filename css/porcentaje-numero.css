@@ -4,7 +4,6 @@
 }
 
 body{
-    margin: 0;
     background-color: rgb(73, 73, 73);
 }
 
@@ -24,21 +23,18 @@ body{
 h2{
     color:gold;
     text-align: end;
-    font-size: 1.1rem;  
-    margin-bottom: 0;
-    padding-top: 4px;  
+    font-size: 1.1rem;    
+    padding-right: 30px;
+    padding-top: 4px; 
 }
 
-.segundo-h2{
+.span-porcentaje{
     color:#3cff00;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
 }
 
 /*---MENU HAMBURGUESA---*/
 /*El "menu__barras", al tener una "position:absolute",
-se posiciona con respecto al "container-header" que tiene una
+se posiciona con respecto al "header" que tiene una
 "position:relative" y, además, es hijo de él.*/
 .menu__barras{   
     position: absolute;
@@ -154,7 +150,6 @@ agregadas a las barras <span> mediante JavaScript: */
     flex-direction: column;    
     align-items: center;
     row-gap: 15px;
-    text-align: center;
 }
 
 .form > label{

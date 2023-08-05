@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadoras con soluciones aritméticas cotidianas">
+    <meta name="author" content="Pablo Araoz">
+    <!--FUENTES:-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
+    <!--MI CSS:-->
+    <link rel="stylesheet" href="./css/formulario.css">
+    <title>Formulario de consultas</title>
+</head>
+<body>
+    <div class="container-general">
+        <header>
+            <img src="./img/Logo padaar.png" alt="logo" class="logo">
+            <p class="multi-linea">Te invito a enviar tus comentarios y sugerencias a <strong>PADAAR Apps</strong>. 
+            Estoy para escucharte:</p>
+        </header>
+
+        <main>
+            <form action="https://formsubmit.co/pablodaniel_84@hotmail.com" method="post" class="formulario">
+                <label for="idNombre">Nombre</label>
+                <input type="text" name="nombre" id="idNombre" class="caja-texto" placeholder="Ingresá tu nombre" required>
+                
+                <label for="idApellido">Apellido</label>
+                <input type="text" name="apellido" id="idApellido" class="caja-texto" placeholder="Ingresá tu apellido" required>  
+                
+                <label for="idTelefono">Teléfono de contacto (opcional)</label>
+                <input type="tel" name="telefono" id="idTelefono" class="caja-texto" placeholder="Ingresá un número de teléfono"> 
+
+                <label for="idEmail">Correo electrónico</label>
+                <input type="email" name="correo" id="idEmail" class="caja-texto"  placeholder="nombre@dominio" required>
+
+                <label for="rango">¿Qué tan buena te pareció la aplicación?</label>                    
+                1 mínimo - 10 máximo<input type="range" name="rango" id="rango" min="0" max="100" step="10">
+
+                <label for="idComentario" class="comentario-caja">Comentario:</label>
+                <textarea name="comentario" id="idComentario" class="caja-comentario" cols="30" rows="10" placeholder="Escribí tus comentarios y/o sugerencias" required></textarea>
+
+                <button type="submit" class="boton">Enviar formulario</button>
+
+                <button type="link" class="boton-volver"><a href="index.html">Volver a la página principal</a></button>
+            </form>
+        </main>
+
+    </div>
+    
+</body>
+</html>

@@ -107,7 +107,7 @@ agregadas a las barras <span> mediante JavaScript: */
     gap: 2em;
     padding-left: 2.3em;
     padding-top: 1em;
-    transform: translateY(30%); /*Altura de los links con respecto al header*/
+    transform: translateY(23%); /*Altura de los links con respecto al header*/
 }
 
 .nav > a{
@@ -247,5 +247,11 @@ agregadas a las barras <span> mediante JavaScript: */
 @media screen and (max-width:360px){
     .nav{
         padding-left: 1em;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .contenido-menu{
+        max-width: 260px;
     }
 }

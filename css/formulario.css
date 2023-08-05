@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(73, 73, 73);
+}
+
+.container-general{
+    display: flex;
+    flex-direction: column; 
+    padding: 0.7em;   
+    max-width: 725px;
+    width: 100%;
+}
+
+.logo{
+    width: 110px;
+}
+
+.multi-linea{
+    white-space: pre-line;
+    color: whitesmoke;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;    
+    row-gap: 5px;
+    color:whitesmoke;
+}
+
+.formulario > label{
+    font-weight: bold;
+}
+
+.caja-texto, .caja-comentario{
+    font-size: 1.3rem;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    padding: 6px;
+    outline-color: rgb(255, 93, 93);
+}
+
+.caja-texto::placeholder{
+    font-size: 1rem;    
+}
+
+.caja-texto:focus{
+    background-color:#ffe3f9;    
+}
+
+#idTelefono{
+    outline-color: rgb(255, 93, 93);
+}
+
+.caja-texto:valid{
+    outline-color: #00c257; 
+}
+
+.comentario-caja{
+    margin-top: 1.5em;
+}
+
+.caja-comentario::placeholder{
+    font-size: 1rem;
+}
+
+.caja-comentario:focus{
+    background-color:#ffc0f1; 
+}
+
+.caja-comentario:valid{
+    outline-color: #00c257; 
+}
+
+.boton{
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;    
+    outline-color: none;
+    padding: 12px;
+    border:0;
+    background-color: #0DCAF0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.boton:hover{
+    transform: scale(0.98);
+    transition: all 300ms;
+    background-color: #009fbe;
+}
+
+.boton-volver{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;    
+    outline-color: none;
+    padding: 12px;
+    border:0;
+    background-color: #00FF00;
+    cursor: pointer;
+}
+
+.boton-volver:hover{
+    transform: scale(0.98);
+    transition: all 300ms;
+    background-color: #007400;
+}
+
+.boton-volver > a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.boton-volver > a:hover{
+    color: white;
+}
+
