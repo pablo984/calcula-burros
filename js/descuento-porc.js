@@ -13,6 +13,14 @@ let porcentajeDeDescuento = "";
 let resultado;
 let signoPeso = "$ "
 
+/*Variable que contiene el código para formatear el resultado con puntos
+y comas decimales: */
+let pesosArgentinos = Intl.NumberFormat("de-DE", {
+    style: "decimal",
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+});
+
 /*Eventos al hacer click: */
 botonCalcular.addEventListener("click", chequearSiHayDatos);
 botonReset.addEventListener("click", resetear);
@@ -50,7 +58,7 @@ function realizarCalculos(){
 }
 
 function mostrarResultado(){
-    spanResultado.innerHTML = signoPeso + resultado;
+    spanResultado.innerHTML = signoPeso + pesosArgentinos.format(resultado);
     calculadora.style.height="640px";
     seccionResultado.style.display="block"; 
 }
