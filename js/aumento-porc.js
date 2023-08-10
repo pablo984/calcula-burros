@@ -44,6 +44,11 @@ function calcular(){
     mostrarResultado();
 }
 
+/*En esta función se usa "parseFloat" para convertir el ingreso del usuario a un numero
+decimal, si tuviese coma, ya que todos los <input> por más que lo haya configurado como
+"number", al programador ese dato le llega como un string. En restas, divisiones, o 
+multiplicaciones, no hace falta pasar el dato a "parseInt" o "parseFloat", ya que Js 
+transforma automáticamente esos datos a tipo número y los opera. */
 function realizarCalculos(){
     let resultadoParcial = (precioOriginal * porcentajeDeAumento) / 100;
     resultado = (parseFloat(precioOriginal) + parseFloat(resultadoParcial)).toFixed(2);

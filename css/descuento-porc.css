@@ -219,10 +219,12 @@ agregadas a las barras <span> mediante JavaScript: */
     background-color: #000000af;
     height: 80px;
     min-width: 200px;
+    max-width: 300px;
     border-radius: 5px;
     text-align: center;
     font-size: 2.5rem;
     color: #3cff00;
+    overflow-y: hidden;
 }
 
 .boton-reset{
@@ -238,6 +240,19 @@ agregadas a las barras <span> mediante JavaScript: */
     background-color: red;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width:340px) {
+    .menu__barras{
+        left:20px;
+    }
+    .container-main{
+        max-width: 300px;
+    }    
+
+    .span-resultado{
+        max-width: 295px;
+    }
 }
 
 @media screen and (max-width:360px){
