@@ -8,14 +8,14 @@
         <!--FUENTES:-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
         <!--MI CSS:-->
-        <link rel="stylesheet" href="./css/style-precio-gr.css">
-        <title>Precio por gramos</title>
+        <link rel="stylesheet" href="./css/precio-del-kg.css">
+        <title>Calcular precio del kg</title>
     </head>
     <body>
         <div class="container-general">
             <header>
                 <div class="container-header">               
-                    <h2>Calcular precio según <span class="span-gramos">gramos</span></h2>                   
+                    <h2>Calcular precio del <span class="span-gramos">kilo</span></h2>                   
                     <!--BOTON FIJO:-->            
                     <div class="menu__barras">
                         <span class="linea1__menu-barras"></span>
@@ -33,8 +33,7 @@
                             <a href="aumento-porc.html">Precio según aumento %</a> 
                             <a href="descuento-porc.html">Precio según descuento %</a>
                             <a href="porcentaje-aumento.html">% de aumento</a>  
-                            <a href="porcentaje-descuento.html">% de descuento</a>     
-                            <a href="precio-del-kg.html">Precio del kg</a>                  
+                            <a href="porcentaje-descuento.html">% de descuento</a>                       
                         </nav>
                     </div>
                 </div>
@@ -46,8 +45,8 @@
                         <label for="idPeso">Ingresá el peso:</label> 
                         <input type="number" name="peso" id="idPeso" class="caja-texto" placeholder="Gramos" required>
     
-                        <label for="idPrecio">Ingresá el precio:</label> 
-                        <input type="number" name="precio" id="idPrecio" class="caja-texto" placeholder="$ Precio x kilo" required>
+                        <label for="idPrecio">Ingresá el precio cobrado:</label> 
+                        <input type="number" name="precio" id="idPrecio" class="caja-texto" placeholder="$ Precio" required>
     
                         <button class="boton-calcular">CALCULAR</button>
     
@@ -55,7 +54,7 @@
                     </div>
                     <section class="seccion-resultado">
                         <div class="caja-resultado">                    
-                            <p>Precio a pagar:</p>
+                            <p>Precio del kilo:</p>
                             <span class="span-resultado"></span>  
                             <button class="boton-reset">RESET</button>                  
                         </div>
@@ -63,7 +62,7 @@
                 </div>            
             </main>
         </div>
-        <script src="./js/precio-gr.js"></script>
+        <script src="./js/precio-del-kg.js"></script>
         <script src="./js/script-menu-barras.js"></script>
     </body>
 </html>

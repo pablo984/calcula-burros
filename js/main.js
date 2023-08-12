@@ -5,6 +5,7 @@ const botonAumentoPorcentaje = document.getElementById("boton-aumento-porcentaje
 const botonDescuentoPorcentaje = document.getElementById("boton-descuento-porcentaje");
 const botonPorcentajeAumento = document.getElementById("boton-porcentaje-aumento");
 const botonPorcentajeDescuento = document.getElementById("boton-porcentaje-descuento");
+const botonCalcularPrecioDelKg = document.getElementById("boton-calcular-precio-del-kg");
 
 botonPorcentajeNumero.addEventListener("click", irACalcularPorcentajeNumero);
 botonPrecio.addEventListener("click", irAPrecioGr);
@@ -13,6 +14,7 @@ botonAumentoPorcentaje.addEventListener("click", irAPorcentajeAumento);
 botonDescuentoPorcentaje.addEventListener("click", irAPorcentajeDescuento);
 botonPorcentajeAumento.addEventListener("click", irAAumentoPorcentaje);
 botonPorcentajeDescuento.addEventListener("click", irADescuentoPorcentaje);
+botonCalcularPrecioDelKg.addEventListener("click", irACalcularPrecioDelKg);
 
 
 //FUNCIONES:
@@ -42,4 +44,8 @@ function irAAumentoPorcentaje(){
 
 function irADescuentoPorcentaje(){
     window.location.href = "porcentaje-descuento.html";
+}
+
+function irACalcularPrecioDelKg(){
+    window.location.href = "precio-del-kg.html";
 }

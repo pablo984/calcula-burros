@@ -23,17 +23,14 @@ body{
 
 h2{
     color:gold;
-    text-align: end;
+    text-align: center;
     font-size: 1.1rem;  
-    margin-bottom: 0;
+    padding-right: 10px;
     padding-top: 4px;  
 }
 
-.segundo-h2{
+.span-gramos{
     color:cyan;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
 }
 
 /*---MENU HAMBURGUESA---*/
@@ -107,7 +104,7 @@ agregadas a las barras <span> mediante JavaScript: */
     gap: 2em;
     padding-left: 2.3em;
     padding-top: 1em;
-    transform: translateY(20%); /*Altura de los links con respecto al header*/
+    transform: translateY(23%); /*Altura de los links con respecto al header*/
 }
 
 .nav > a{
@@ -154,7 +151,6 @@ agregadas a las barras <span> mediante JavaScript: */
     flex-direction: column;    
     align-items: center;
     row-gap: 15px;
-    text-align: center;
 }
 
 .form > label{
