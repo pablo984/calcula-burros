@@ -53,7 +53,7 @@ p{
 /*-----------------MAIN--------------------------------*/
 #ayuda-porcentaje-numero, #ayuda-precio-gr, #ayuda-precio-kg,
 #ayuda-aumento-porc, #ayuda-descuento-porc, #ayuda-porcentaje-aumento,
-#ayuda-porcentaje-descuento, #ayuda-precio-del-kg{
+#ayuda-porcentaje-descuento, #ayuda-precio-del-kg, #ayuda-dolar{
     color:white;
     margin-top: 3em;
     margin-bottom: 0;

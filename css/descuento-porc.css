@@ -132,6 +132,7 @@ agregadas a las barras <span> mediante JavaScript: */
     height: 450px;
     width: 320px;
     max-width: 320px;
+    margin-top: 0.4rem;
     border: 1px solid white;
     border-radius: 25px;
     box-shadow: 0px 0px 10px 1px white;
@@ -160,8 +161,8 @@ agregadas a las barras <span> mediante JavaScript: */
 }
 
 .caja-texto{
-    height: 80px;
-    max-width: 180px;
+    height: 75px;
+    max-width: 270px;
     border-radius: 5px;
     text-align: center;
     font-size: 2.5rem;
@@ -171,6 +172,8 @@ agregadas a las barras <span> mediante JavaScript: */
 
 .caja-texto::placeholder{
     font-size: 1.2rem;
+    color:black;
+    font-weight: bold;
 }
 
 .caja-texto:focus{
