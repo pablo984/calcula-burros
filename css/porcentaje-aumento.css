@@ -101,13 +101,18 @@ agregadas a las barras <span> mediante JavaScript: */
     transition: all 400ms ease;    
 }
 
+.logo-en-menu{
+    width: 85px;
+    padding: 5px;
+}
+
 .nav{
     display: flex;
     flex-direction: column;      
     gap: 2em;
-    padding-left: 2.3em;
-    padding-top: 1em;
-    transform: translateY(20%); /*Altura de los links con respecto al header*/
+    padding-left: 2.1rem;
+    padding-top: 1rem;
+    transform: translateY(14%); /*Altura de los links con respecto al header*/
 }
 
 .nav > a{
