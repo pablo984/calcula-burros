@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    margin: 0;
+    background-color: rgb(73, 73, 73);
+}
+
+.container-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.container-header{
+    position: relative;
+    width: 320px;
+    max-width: 320px;
+}
+
+h2{
+    color:gold;
+    text-align: end;
+    font-size: 17px;  
+    padding-right: 20px;
+    padding-top: 4px;  
+}
+
+.span-blue{
+    color:rgb(0, 183, 255);
+}
+
+/*---MENU HAMBURGUESA---*/
+/*El "menu__barras", al tener una "position:absolute",
+se posiciona con respecto al "container-header" que tiene una
+"position:relative" y, además, es hijo de él.*/
+.menu__barras{   
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:0;
+    left: 1px;
+    transform: scale(1);
+    cursor: pointer;       
+    z-index: 5;    
+}
+
+.menu__barras > span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+
+/*Clases que no estan en el HTML, pero que seran
+agregadas a las barras <span> mediante JavaScript: */
+.activarLinea1__menu-barras{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activarLinea2__menu-barras{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activarLinea3__menu-barras{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.container-menu{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms ease;
+    z-index: 4;
+}
+
+.contenido-menu{
+    position: absolute;
+    width: 100%;
+    max-width: 235px;
+    top:0;
+    left: 0;    
+    background-color: #12322B;;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 400ms ease;    
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;      
+    gap: 2em;
+    padding-left: 2.3em;
+    padding-top: 1em;
+    transform: translateY(20%); /*Altura de los links con respecto al header*/
+}
+
+.nav > a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    color: aqua;
+}
+
+/*ANIMACIÓN: */
+.animacion{
+    opacity: 1;
+    visibility: visible;    
+}
+
+.animacion-2{
+    transform: translateX(0%);
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    width: 320px;
+    max-width: 320px;
+    margin-top: 0.4rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 1px white;
+    padding: 10px;
+    background-color: rgb(68, 68, 68);    
+}
+
+.compra-venta{
+    display: flex;
+    justify-content: space-between;
+    width: 278px;   
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid white; 
+}
+
+.compra, .fecha, .venta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compra > p, .fecha > p, .venta > p{
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+
+.p-compra, .p-actualizacion, .p-venta{
+    color: rgb(0, 241, 101);
+    font-weight: bold;
+}
+
+.p-precio-compra, .p-fecha, .p-precio-venta{
+    color: red;
+    font-weight: bold;    
+}
+
+.titulo-operacion{
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.selector-operacion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 278px;
+}
+
+.operacion{
+    margin: auto;
+}
+
+.comprar-dolares, .vender-dolares, .vender-pesos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-comprar, .boton-vender, .boton-vender-pesos{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    background-color:rgb(0, 183, 255);        
+}
+
+.operacion{
+    color:rgb(0, 183, 255);    
+}
+
+/*Estilos que serán agregados desde JavaScript: */
+.iluminar-texto{
+    text-shadow: 0px 0px 15px yellow;
+    color:yellow;
+}
+
+.iluminar-boton{
+    box-shadow: 0px 0px 12px yellow;
+    background-color: yellow;
+}
+
+.loguito{
+    position: absolute;
+    width: 50px;
+    bottom: 12px;
+    right: 12px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    row-gap: 15px;
+}
+
+.form > label{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.caja-texto{
+    height: 75px;
+    width: 270px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+    outline-color:gold;
+}
+
+.caja-texto::placeholder{
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+    
+}
+
+.caja-texto:focus{
+    box-shadow: 0px 0px 12px 1px gold;
+}
+
+.boton-calcular{
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 3em;
+    width: 180px;
+    border-radius: 5px;
+    outline-color: none;
+    margin-top: 14px;
+    margin-bottom:1rem;
+    border:0 ;
+    background-color: #f07400;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.seccion-resultado{
+    display: none;
+}
+
+.caja-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.caja-resultado > p{    
+    color: gold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.span-resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000af;    
+    min-width: 200px;
+    max-width: 300px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.1rem;
+    color: #3cff00;
+    overflow-y: hidden;
+}
+
+.boton-reset{
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 3em;
+    width: 180px;
+    border-radius: 5px;
+    outline-color: none;
+    margin-top: 1em;
+    margin-bottom:1em;
+    border:0 ;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:340px) {
+    .menu__barras{
+        left:20px;
+    }
+    .container-main{
+        max-width: 300px;
+    }    
+
+    .span-resultado{
+        max-width: 295px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .nav{
+        padding-left: 1em;
+    }
+    
+    .container-main{
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .contenido-menu{
+        max-width: 260px;
+    }
+}

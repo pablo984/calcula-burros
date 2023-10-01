@@ -8,14 +8,14 @@
         <!--FUENTES:-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
         <!--MI CSS:-->
-        <link rel="stylesheet" href="./css/descuento-porc.css">
-        <title>Descuento de %</title>
+        <link rel="stylesheet" href="./css/dolar.css">
+        <title>Dolar Compra - Venta</title>
     </head>
     <body>
         <div class="container-general">
             <header>
                 <div class="container-header">               
-                    <h2>Calcular descuento según <span class="span-porcentaje">%</span></h2>                   
+                    <h2>Compra-Venta de dólar <span class="span-blue">blue</span></h2>                   
                     <!--BOTON FIJO:-->            
                     <div class="menu__barras">
                         <span class="linea1__menu-barras"></span>
@@ -34,8 +34,7 @@
                             <a href="aumento-porc.html">Precio según aumento %</a>     
                             <a href="porcentaje-aumento.html">% de aumento</a>     
                             <a href="porcentaje-descuento.html">% de descuento</a>    
-                            <a href="precio-del-kg.html">Precio del kg</a>     
-                            <a href="dolar.html">Comprar-Vender dólares</a>         
+                            <a href="precio-del-kg.html">Precio del kg</a>              
                         </nav>
                     </div>
                 </div>
@@ -43,20 +42,49 @@
     
             <main>
                 <div class="container-main">
+                    <section class="compra-venta">
+                        <div class="compra">
+                            <p class="p-compra">Compra</p>   
+                            <p class="p-precio-compra"></p>                     
+                        </div>
+                        <div class="fecha">
+                            <p class="p-actualizacion">Actualización</p>
+                            <p class="p-fecha">2023-09-30</p>
+                        </div>
+                        <div class="venta">
+                            <p class="p-venta">Venta</p>
+                            <p class="p-precio-venta">123</p>
+                        </div>
+                    </section>
+                    <h3 class="titulo-operacion">Elegí tu operación</h3>
+                    <section class="selector-operacion">                        
+                        <div class="comprar-dolares">
+                            <p class="operacion comprar">Comprar</p>
+                            <p class="operacion comprar">dólares</p>
+                            <button class="boton-comprar" id="0"></button>
+                        </div>
+                        <div class="vender-dolares">
+                            <p class="operacion vender">Vender </p>
+                            <p class="operacion vender">dólares</p>
+                            <button class="boton-vender" id="1"></button>
+                        </div>
+                        <div class="vender-pesos">
+                            <p class="operacion vender-p">Vender</p>
+                            <p class="operacion vender-p">pesos</p>
+                            <button class="boton-vender-pesos" id="2"></button>
+                        </div>
+
+                    </section>
                     <div class="form">
-                        <label for="idPrecioOriginal">Ingresá el precio original:</label> 
-                        <input type="number" name="peso" id="idPrecioOriginal" class="caja-texto" placeholder="Precio $" required>
-    
-                        <label for="idDescuento">Ingresá el % de descuento:</label> 
-                        <input type="number" name="precio" id="idDescuento" class="caja-texto" placeholder="Sólo números" required>
-    
+                        <label for="idCantidad" class="label"></label> 
+                        <input type="number" name="peso" id="idCantidad" class="caja-texto" placeholder="Cantidad sin puntos ni comas" required>   
                         <button class="boton-calcular">CALCULAR</button>
     
                         <img src="./img/Logo padaar.png" alt="logo-padaar" class="loguito">
                     </div>
                     <section class="seccion-resultado">
                         <div class="caja-resultado">                    
-                            <p>Precio a pagar con descuento:</p>
+                            <p class="parrafo-resultado"></p>
                             <span class="span-resultado"></span>  
                             <button class="boton-reset">RESET</button>                  
                         </div>
@@ -64,7 +92,7 @@
                 </div>            
             </main>
         </div>
-        <script src="./js/descuento-porc.js"></script>
+        <script src="./js/dolar.js"></script>
         <script src="./js/script-menu-barras.js"></script>
     </body>
 </html>
