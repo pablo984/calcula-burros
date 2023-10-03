@@ -44,7 +44,12 @@ async function cargarJson(){
     console.log("Se guardó el JSON transformado como Objeto JS en la variable GLOBAL 'deJSONaObjetoJs':");         
     //Estampado de precios en la aplicación:
     precioCompra.innerHTML = ("$" + deJSONaObjetoJs.compra);
-    fecha.innerHTML = (deJSONaObjetoJs.fechaActualizacion.slice(0, 10));
+    //Sólo se obtiene, del string de fecha, del caracter del índice 0 hasta el caracter 9 (10-1);
+    fechaOriginal = (deJSONaObjetoJs.fechaActualizacion.slice(0, 10));
+    //Divide el string en partes cada vez que encuentre un "-" y lo guarda en un array. En este caso, lo divide en 3:
+    partesFechaOriginal = fechaOriginal.split("-");
+    //Imprime la fecha con los valores acomodados a como vemos la fecha en Argentina tomando cada parte del array: 
+    fecha.innerHTML = (partesFechaOriginal[2] + "-" + partesFechaOriginal[1] + "-" + partesFechaOriginal[0]);
     precioVenta.innerHTML = ("$" + deJSONaObjetoJs.venta);
 }
 
@@ -133,13 +138,13 @@ function cargarDatos(){
 function chequearSiHayDatos(){
     let idBoton = sessionStorage.getItem("idBoton");
     if(idBoton == null) {
-        alert("Tenés que elegir una operación a ralizar");        
-        console.log("Tenes que elegir una operación")
+        alert("Tenés que elegir una operación a realizar");        
+        console.log("Tenés que elegir una operación")
     }    
     else if(numeroIngresado == ""){
         alert("Tenés que ingresar un valor");
         datoNumero.focus();
-        console.log("Tenes que ingresar un valor");
+        console.log("Tenés que ingresar un valor");
     }
     else{
         calcular();
