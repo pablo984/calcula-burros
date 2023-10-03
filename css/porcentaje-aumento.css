@@ -96,7 +96,8 @@ agregadas a las barras <span> mediante JavaScript: */
     top:0;
     left: 0;    
     background-color: #12322B;;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
     transform: translateX(-100%);
     transition: all 400ms ease;    
 }
