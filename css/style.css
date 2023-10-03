@@ -60,7 +60,7 @@ body{
 
 .container-botones{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     row-gap: 1.6em;
     margin-bottom: 3em;
 }
@@ -134,11 +134,23 @@ body{
     margin-top: 0;
 }
 
-@media screen and (max-width:340px) {
-    .container-main{
-        padding-left: 10px;
-        padding-right: 10px;
+@media screen and (max-width:320px){
+    .boton{
+        font-size: 1.2rem;
     }
+}
+
+@media screen and (min-width:321px) and (max-width:355px){
+    .boton{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:354px) {
+    .container-main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }   
 }
 
 @media screen and (min-width:1152px) {
